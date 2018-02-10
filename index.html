@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To do List</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/layout.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Today's list</h1>
+        </header>
+        <section class="form-entire">
+            <h2 id="form_title"></h2>
+            <div class="container">
+                <form class="form-request" action="javascript:form_action_add();" method="post">
+                    <textarea class="form-textarea" id="event" placeholder="Type something to do today!"></textarea> <br />
+                    <button class="button-transtion-all" type="submit">Add</button>
+                </form>
+            </div>                
+            <hr>
+            <div class="container">
+                <form class="form-list" action="" method="post">
+                    <ul class="form-list-display" id="list_display"></ul>
+                    <button class="button-transtion-all" onClick="">Clear</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>© Produced by SHANG</p>
+            <p>
+                Who is she?
+                <a href="http://shang.csie.io">CLICK HERE!</a>
+            </p>
+        </footer>
+    </body>
+</html>

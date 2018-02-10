@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import "sass/component/button.scss";
+
+$button_width: 100px;
+$button_height: 40px;
+$background_color: #FDD66B;
+$form_width: 500px;
+$fontfamily_all: 'Rammetto One', cursive;
+$fontfamily_textarea: 'Mukta Mahee', sans-serif;
+
+body {
+    font-family: $fontfamily_all;
+    background-color: $background_color;
+    text-align: center;
+}
+
+header {
+    text-shadow: 1px 1px gray;
+}
+
+.form-entire {
+    display: inline-block;
+    max-width: 500px;
+    min-width: 300px;
+    width: 50vw;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #FFB554;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.form-textarea {
+    max-width: 400px;
+    min-width: 200px;
+    width: 30vw;
+    border-style: none; 
+    border-color: Transparent; 
+    border-radius: 5px;
+    overflow: auto;
+    font-family: $fontfamily_textarea;
+    font-size: 1em;
+}
+
+.form-list-display {
+    li label {
+        float: left;
+    }
+    li button {
+        float: right;
+        @include monocolor;
+        font-family: $fontfamily_all;
+    }
+
+}
+
+
+.button-transtion-all {
+    @include transtion-all($button_width, $button_height);
+    font-family: $fontfamily_all;
+}
+
+.link-format {
+    outline: none;
+    text-decoration: none;
+}
+
+.container {
+    padding: 5px;
+}
+
+hr {
+    width: 80%;
+    border-style: dashed;
+}
+
+footer {
+    a {
+        padding: 5px;
+        color: #000000;
+        &:hover {
+            border-radius: 5px;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        &:active {
+            background-color: $background_color;
+            color: #575757;
+        }
+    }
+}

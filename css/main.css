@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+.form-list-display li button, .button-transtion-all {
+  border-radius: 12px;
+  border: 0px;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+body {
+  font-family: "Rammetto One", cursive;
+  background-color: #FDD66B;
+  text-align: center; }
+
+header {
+  text-shadow: 1px 1px gray; }
+
+.form-entire {
+  display: inline-block;
+  max-width: 500px;
+  min-width: 300px;
+  width: 50vw;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #FFB554;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.form-textarea {
+  max-width: 400px;
+  min-width: 200px;
+  width: 30vw;
+  border-style: none;
+  border-color: Transparent;
+  border-radius: 5px;
+  overflow: auto;
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 1em; }
+
+.form-list-display li label {
+  float: left; }
+.form-list-display li button {
+  float: right;
+  transition: all ease-in 0.1s;
+  background-color: gray;
+  font-family: "Rammetto One", cursive; }
+  .form-list-display li button:hover {
+    background-color: #B0A599; }
+
+.button-transtion-all {
+  margin: 5px;
+  width: 100px;
+  height: 40px;
+  background: -webkit-linear-gradient(left top, yellow, red);
+  background: -o-linear-gradient(bottom right, yellow, red);
+  background: -moz-linear-gradient(bottom right, yellow, red);
+  background: linear-gradient(left top, yellow, red);
+  transition: all ease-in 0.25s;
+  -webkit-transition: background 0.2s ease-out;
+  -moz-transition: background 0.2s ease-out;
+  -o-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+  font-family: "Rammetto One", cursive; }
+  .button-transtion-all:hover {
+    background-position: 100px; }
+  .button-transtion-all:active {
+    color: #FFFFFF; }
+
+.link-format {
+  outline: none;
+  text-decoration: none; }
+
+.container {
+  padding: 5px; }
+
+hr {
+  width: 80%;
+  border-style: dashed; }
+
+footer a {
+  padding: 5px;
+  color: #000000; }
+  footer a:hover {
+    border-radius: 5px;
+    background-color: #000000;
+    color: #FFFFFF; }
+  footer a:active {
+    background-color: #FDD66B;
+    color: #575757; }
+
+/*# sourceMappingURL=main.css.map */

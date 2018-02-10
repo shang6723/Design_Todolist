@@ -1,0 +1,40 @@
+%basic-button {
+    border-radius: 12px;
+    border: 0px;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+
+@mixin transtion-all ($width:200px, $height:300px){
+    @extend %basic-button;
+    margin: 5px;
+    width: $width;
+    height: $height;
+    background: -webkit-linear-gradient(left top, yellow, red);
+    background: -o-linear-gradient(bottom right, yellow, red);
+    background: -moz-linear-gradient(bottom right, yellow, red);
+    background: linear-gradient(left top, yellow, red);
+    transition: all ease-in 0.25s;
+
+    -webkit-transition: background 0.2s ease-out;  
+    -moz-transition: background 0.2s ease-out;  
+    -o-transition: background 0.2s ease-out;  
+    transition: background 0.2s ease-out;
+
+    &:hover {
+        background-position: $width;
+    }
+    &:active {
+        color: #FFFFFF;
+    }
+}
+
+@mixin monocolor () {
+    @extend %basic-button;
+    transition: all ease-in 0.1s;
+    background-color: gray;
+    &:hover {
+        background-color: #B0A599;
+    }
+}
