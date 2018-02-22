@@ -35,7 +35,13 @@ header {
   font-family: "Mukta Mahee", sans-serif;
   font-size: 1em; }
 
-.form-list-display li label {
+.form-list-display li div {
+  float: left;
+  overflow: hidden;
+  max-width: 350px;
+  min-width: 150px;
+  width: 28vw; }
+.form-list-display li div label {
   float: left; }
 .form-list-display li button {
   float: right;

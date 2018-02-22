@@ -43,7 +43,14 @@ header {
 }
 
 .form-list-display {
-    li label {
+    li div {
+        float: left;
+        overflow: hidden;
+        max-width: 350px;
+        min-width: 150px;
+        width: 28vw;
+    }
+    li div label {
         float: left;
     }
     li button {
